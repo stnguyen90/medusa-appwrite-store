@@ -1,0 +1,732 @@
+{
+  "store": {
+    "currencies": ["usd"]
+  },
+  "users": [
+    {
+      "email": "admin@appwrite.io",
+      "password": "supersecret"
+    }
+  ],
+  "regions": [
+    {
+      "id": "test-region-na",
+      "name": "NA",
+      "currency_code": "usd",
+      "tax_rate": 0,
+      "payment_providers": ["manual"],
+      "fulfillment_providers": ["manual"],
+      "countries": ["us", "ca"]
+    }
+  ],
+  "shipping_options": [
+    {
+      "name": "FakeEx Standard",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 800
+    },
+    {
+      "name": "FakeEx Express",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1200
+    },
+    {
+      "name": "FakeEx Return",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 800
+    },
+    {
+      "name": "I want to return it myself",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 0
+    }
+  ],
+  "products": [
+    {
+      "title": "tshirt && black",
+      "subtitle": null,
+      "description": "You've now found the staple t-shirt of your wardrobe. It's made of 100% ring-spun cotton and is soft and comfy. The double stitching on the neckline and sleeves add more durability to what is sure to be a favorite!",
+      "handle": "appwrite-mens-t-shirt-v2",
+      "is_giftcard": false,
+      "weight": 400,
+      "origin_country": "BD",
+      "matierial": "100% ring-spun cotton",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-basic-softstyle-t-shirt-black-front-608fd5a588636_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-basic-softstyle-t-shirt-black-front-608fd5a588a57_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-basic-softstyle-t-shirt-black-front-608fd5a588bd6_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-basic-softstyle-t-shirt-black-left-608fd5a588d98_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-basic-softstyle-t-shirt-black-left-front-608fd5a588efc_2100x.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["S", "M", "L", "XL", "2XL", "3XL"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "2XL",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2400
+            }
+          ],
+          "options": [
+            {
+              "value": "2XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "3XL",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2600
+            }
+          ],
+          "options": [
+            {
+              "value": "3XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "./blackJoggers",
+      "subtitle": null,
+      "description": "Get ready for that 10K run or take it slow in your backyard—these joggers are sure to make you feel comfortable either way.",
+      "handle": "appwrite-mens-joggers",
+      "is_giftcard": false,
+      "status": "published",
+      "thumbnail": null,
+      "weight": 400,
+      "origin_country": "SV",
+      "material": "60% cotton, 40% polyester pre-shrunk fleece",
+      "variants": [
+        {
+          "title": "S",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ]
+        },
+        {
+          "title": "M",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ]
+        },
+        {
+          "title": "L",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ]
+        },
+        {
+          "title": "XL",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ]
+        },
+        {
+          "title": "2XL",
+          "inventory_quantity": 100,
+          "manage_inventory": false,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3800
+            }
+          ],
+          "options": [
+            {
+              "value": "2XL"
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-right-front-608be770eca77_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-left-leg-608be770ecdb6_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-left-leg-608be770ece76_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-left-front-608be770ecf40_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-right-leg-608be770ed006_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-front-608be770ed0d5_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-back-608be770ed18b_2100x.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["S", "M", "L", "XL", "2XL"]
+        }
+      ]
+    },
+    {
+      "title": "./blackJoggers",
+      "subtitle": null,
+      "description": "Get ready for that 10K run or take it slow in your backyard—these joggers are sure to make you feel comfortable either way.",
+      "handle": "appwrite-womens-joggers",
+      "is_giftcard": false,
+      "status": "published",
+      "thumbnail": null,
+      "weight": 400,
+      "material": "60% cotton, 40% polyester pre-shrunk fleece",
+      "variants": [
+        {
+          "title": "S",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ]
+        },
+        {
+          "title": "M",
+          "upc": null,
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ]
+        },
+        {
+          "title": "L",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ]
+        },
+        {
+          "title": "XL",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3700
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ]
+        },
+        {
+          "title": "2XL",
+          "inventory_quantity": 100,
+          "manage_inventory": true,
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 0
+            },
+            {
+              "currency_code": "usd",
+              "amount": 3800
+            }
+          ],
+          "options": [
+            {
+              "value": "2XL"
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-left-leg-608fef1b17cc6_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-left-leg-608fef1b17e00_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-left-front-608fef1b17ec4_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-right-leg-608fef1b17f98_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-front-608fef1b1806e_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/unisex-joggers-black-back-608fef1b1812d_2100x.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["S", "M", "L", "XL", "2XL"]
+        }
+      ]
+    },
+    {
+      "title": "fork(baby, onepiece)",
+      "subtitle": null,
+      "description": "Dress your baby to the nines with this 100% cotton one piece. It has three snap leg closure for easy changing, a comfortable envelope neckline, and a beautiful print that's bound to get the baby all happy and giggling.",
+      "handle": "baby-short-sleeve-one-piece",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/baby-short-sleeve-one-piece-pink-front-60abc97d9c38f_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/baby-short-sleeve-one-piece-pink-back-60abc97d9c65e_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/baby-short-sleeve-one-piece-white-front-60abc97d9c72c_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/baby-short-sleeve-one-piece-white-back-60abc97d9c80b_2100x.jpg"
+      ],
+      "options": [
+        {
+          "title": "Color",
+          "values": ["Pink", "White"]
+        },
+        {
+          "title": "Size",
+          "values": ["3-6m", "6-12m", "12-18m", "18-24m"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "Pink / 3-6m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "Pink"
+            },
+            {
+              "value": "3-6m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "Pink / 6-12m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "Pink"
+            },
+            {
+              "value": "6-12m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "Pink / 12-18m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "Pink"
+            },
+            {
+              "value": "12-18m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "Pink / 18-24m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "Pink"
+            },
+            {
+              "value": "18-24m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "White / 3-6m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "White"
+            },
+            {
+              "value": "3-6m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "White / 6-12m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "White"
+            },
+            {
+              "value": "6-12m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "White / 12-18m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "White"
+            },
+            {
+              "value": "12-18m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "White / 18-24m",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 28
+            }
+          ],
+          "options": [
+            {
+              "value": "White"
+            },
+            {
+              "value": "18-24m"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": ".stickerPack { position: sticky; }",
+      "subtitle": null,
+      "description": "These stickers are printed on durable, high opacity adhesive vinyl which makes them perfect for regular use, as well as for covering other stickers or paint. The high-quality vinyl ensures there are no bubbles when applying the stickers.",
+      "handle": "appwrite-sticker-pack",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/kiss-cut-stickers-4x4-default-60b74d3d2a0e1_2100x.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["One Size"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "One Size",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 500
+            }
+          ],
+          "options": [
+            {
+              "value": "One Size"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "init_mug()",
+      "subtitle": null,
+      "description": "Whether you're drinking your morning coffee, evening tea, or something in between - this mug's for you! It's sturdy and glossy with a vivid print that'll withstand the microwave and dishwasher.",
+      "handle": "coffee-mug",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/white-glossy-mug-11oz-handle-on-right-608fd4cba5fe0_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/white-glossy-mug-11oz-handle-on-left-608fd4cba61ca_2100x.jpg",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/white-glossy-mug-11oz-front-view-608fd4cba6220_2100x.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["11oz", "15oz"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "11oz",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 1500
+            }
+          ],
+          "options": [
+            {
+              "value": "11oz"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "15oz",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 1900
+            }
+          ],
+          "options": [
+            {
+              "value": "15oz"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "init_pillow(\"Just Black\")",
+      "subtitle": null,
+      "description": "A strategically placed accent can bring the whole room to life, and this pillow is just what you need to do that. What's more, the soft, machine-washable case with the shape-retaining insert is a joy to have long afternoon naps on.",
+      "handle": "appwrite-throw-pillow-black-center",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/all-over-print-basic-pillow-18x18-front-60b4f57704f33_2100x.png?",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/all-over-print-basic-pillow-18x18-front-60b4f57705273_2100x.png?",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/all-over-print-basic-pillow-18x18-front-lifestyle-6-60b4f577051eb_2100x.png?",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/all-over-print-basic-pillow-22x22-front-60b4f577052de_2100x.png?",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/all-over-print-basic-pillow-22x22-front-60b4f57705404_2100x.png?",
+        "https://cdn.shopify.com/s/files/1/0532/9397/3658/products/all-over-print-basic-pillow-22x22-front-lifestyle-6-60b4f5770535b_2100x.png?"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["18x18", "22x22"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "18x18",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 2600
+            }
+          ],
+          "options": [
+            {
+              "value": "18x18"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "22x22",
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 3000
+            }
+          ],
+          "options": [
+            {
+              "value": "22x22"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    }
+  ]
+}
