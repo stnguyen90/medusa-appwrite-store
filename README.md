@@ -1,8 +1,46 @@
 # Medusa Appwrite Store
 
+![Medusa Hackathon 2022](docs/hackathon-banner.jpeg)
+
+## About
+
+### Participants
+
+#### Steven
+
+- GitHub - @stnguyen90
+- Twitter - @stnguyen90
+- Discord - BalistarDrake#3823
+
+### Description
+
 This is a demo of the [Appwrite Swag Store](https://store.appwrite.io/) built using Medusa, an open source e-commerce platform.
 
-## Installation
+### Preview
+
+#### Mobile
+
+![Mobile Home](docs/mobile-home.png)
+
+![Mobile Menu](docs/mobile-menu.png)
+
+![Mobile Collection](docs/mobile-collection.png)
+
+#### Desktop
+
+![Desktop Home](docs/desktop-home.png)
+
+![Deskop Collection](docs/desktop-collection.png)
+
+## Set up Project
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) v14 or greater installed on your machine
+
+### Install Project
 
 1. **Install Medusa CLI**
 
