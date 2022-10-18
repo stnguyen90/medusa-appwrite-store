@@ -27,13 +27,13 @@ const Container = ({ children }: ContainerProps) => {
           as={Fragment}
           enter="transition ease-in-out duration-500 transform"
           enterFrom="translate-x-full"
-          enterTo="translate-x-1/2"
+          enterTo="translate-x-[20%]"
           leave="transition ease-in-out duration-500 transform"
-          leaveFrom="translate-x-1/2"
+          leaveFrom="translate-x-[20%]"
           leaveTo="translate-x-full"
         >
           <div className="absolute inset-0 overflow-hidden trans">
-            <div className="pointer-events-none fixed inset-y-0 right-left flex max-w-[50%]">
+            <div className="pointer-events-none fixed inset-y-0 right-left flex w-4/5">
               <div className="relative w-screen pointer-events-auto bg-white text-gray-900 flex flex-col overflow-y-auto">
                 {children}
               </div>
